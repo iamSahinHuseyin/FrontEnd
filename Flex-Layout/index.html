@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flex-Layout</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    background-color: palegoldenrod;
+    text-align: center;
+    color: #1c1c1c;
+}
+.header p {
+    display: block;
+    padding: 15px;
+}
+.navbar {
+    display: flex;
+	
+    background-color: #1c1c1c;
+}
+.navbar a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+.navbar a:hover {
+    background-color: palegoldenrod;
+    color: #1c1c1c;
+}
+	.img{
+		width: 100%;
+		height: 200px;
+		background-color: #ccc;
+	}
+	.menu-img{
+		height: 200px;
+		background-color: #ccc;
+	}
+	.menu-box{
+		margin: 5px;
+		height: 50px;
+		background-color: #ccc;
+	}
+	.container{
+		display: flex;
+		flex-direction: row;
+	}
+	.post-item{
+		padding: 20px;
+	}
+	.menu{
+		display: block;
+		width: 25%;
+		padding: 20px;
+		background-color: darkgray;
+	}
+	.main{
+		width: 100%;
+	}
+	h2,h3,p{
+		padding: 25px 0;
+	}
+	@media all and (max-width:700px){
+		.navbar{
+			flex-direction: column;
+			text-align: center;
+		}
+		.container{
+			display: block;
+		}
+		.menu, .main{
+			width: 100%;
+			
+		}
+	}
+	@media all and (max-width:900px){
+		.navbar{
+			justify-content: center;
+		}
+		}
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1>Lorem ipsum.</h1>
+  <p>Lorem ipsum dolor sit.</p>
+</div>
+<nav class="navbar"> <a href="#">Link 1</a> <a href="#">Link 2</a> <a href="#">Link 3</a> <a href="#">Link 4</a> </nav>
+	
+	
+	
+	
+	
+<div class="container">
+  <div class="main">
+    <div class="post-item">
+      <h2>Lorem ipsum.</h2>
+      <div class="img"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam facere eos quia, eveniet rerum atque.</p>
+    </div>
+    <div class="post-item">
+      <h2>Lorem ipsum.</h2>
+      <div class="img"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam facere eos quia, eveniet rerum atque.</p>
+    </div>
+	  <div class="post-item">
+      <h2>Lorem ipsum.</h2>
+      <div class="img"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam facere eos quia, eveniet rerum atque.</p>
+    </div>
+  </div>
+	
+	
+	
+	
+	
+	
+	
+	
+  <div class="menu">
+    <h3>Lorem ipsum.</h3>
+    <div class="menu-img"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique rem, pariatur est reprehenderit! Possimus, tempora.</p>
+    <div class="menu-box"></div>
+    <div class="menu-box"></div>
+    <div class="menu-box"></div>
+	  <h3>Lorem ipsum.</h3>
+    <div class="menu-img"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique rem, pariatur est reprehenderit! Possimus, tempora.</p>
+    <div class="menu-box"></div>
+    <div class="menu-box"></div>
+    <div class="menu-box"></div>
+	  
+  </div>
+</div>
+</body>
+</html>
