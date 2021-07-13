@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+}
+
+
+#Hersey {
+	margin: 50px auto;
+}
+.item-Kapsayici{
+	width: 25%;
+	float: left;
+	padding: 10px 10px;
+	transition: all 2s;
+	
+}
+.resim-item{
+	
+	border: 1px solid grey;
+	transition: all 2s;
+}
+.resim-item:hover{
+	border: 1px solid black;
+	background-color: azure;
+	opacity: 0.5;
+	
+}
+.resim-item img{
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	
+}
+.aciklama{
+	padding: 20px;
+}

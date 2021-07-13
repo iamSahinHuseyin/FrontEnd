@@ -1,0 +1,42 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #1c1c1c;
+}
+#galari{
+	margin: 20px auto;
+}
+
+.satir{
+	width: 25%;
+	float: left;
+	padding: 5px;
+}
+.resim{
+	box-shadow: 0 5px 5px whitesmoke;
+}
+.resim img{
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+.aciklama{
+	margin: 5px;
+	color: whitesmoke;
+}
+@media screen and (min-width :1200px){
+	.satir{
+	width: 20%;
+}
+}
+@media screen and (max-width :900px){
+	.satir{
+	width: 50%;
+}
+}
+@media screen and (max-width :500px){
+	.satir{
+	width: 100%;
+}
+}
